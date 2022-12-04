@@ -1,0 +1,7 @@
+git init
+---
+git status
+git add .
+git status
+git commit -m"указать полный комментарий"
+git push
