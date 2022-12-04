@@ -1,72 +1,83 @@
-/* wrapper>menu>menu__item>menu__link
+/* Дерево:
+wrapper>menu>menu__item>menu__link
                     submenu>submenu__item>submenu__link>
                                 subsubmenu>subsubmenu__item>subsubmenu__link> */
-* {
+                                
+/* 01 */
+* {  /* Задаю общие параметры для всех элементов */
     text-decoration: none;
     color: #cbcbcb; 
     text-transform: uppercase;
 }
-.menu {
+/* 10 */
+.menu {  /* Задаю общие параметры для menu */
     margin: 0;
     padding: 0;
     font-size: 0;
     text-align: center;
 }
-.menu__item {
+/* 10 */
+.menu__item {  /* Задаю параметры для элементов menu */
     background-color: #333333;
     padding: 40px;
-    /* width: 200px; */
     
 }
-.submenu {
-    top: 95px;
-    left: 0;
-}
-.submenu__item {
-    padding: 40px;
-    width: 200px;
-    text-align: left;
-}
-.subsubmenu {
-    top: 100px;
-    left: 100%;
-}
-.subsubmenu__item {
-    padding: 40px;
-    width: 400px;
-    
-    text-align: left;
-}
-
-.subsubmenu__item {
-    display: inline-block;
-    background: #009eef;
-}
-
-.menu__item,
-.subsubmenu__item {
-    position: relative;
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.submenu,
-.subsubmenu {
-    display: none;
-    position: absolute;
-    background: #009eef;
-}
-
-.menu__item:hover {
+/* 20 */
+.menu__item:hover {  /* Задаю параметры для элементов menu, при наведении на них */
     background-color: #009eef;
     outline: 2px solid #0084ef;
     color: white;
 }
+/* 10 */
+.submenu {  /* Задаю положение для submenu */
+    top: 95px;
+    left: 0;
+}
+/* 10 */
+.submenu__item {  /* Задаю положение для элементов submenu */
+    padding: 40px;
+    width: 200px;
+    text-align: left;
+}
+/* 10 */
+.subsubmenu {  /* Задаю положение для subsubmenu */
+    top: 100px;
+    left: 100%;
+}
+/* 10 */
+.subsubmenu__item {  /* Задаю положение и параметры  для элементов subsubmenu */
+    padding: 40px;
+    width: 400px;
+    text-align: left;
+    display: inline-block;
+    background: #009eef;
+}
+   
+/* Задаю позиционирование для элементов menu__item и subsubmenu__item */
+.menu__item, /* 10 */
+.subsubmenu__item { /* 10 */
+    /* position указывает, как элемент позиционируется в документе.
+    position: relative; - элементы относительные. 
+    Их можем двигать, относительно элементов со значением position: absolute; */
+    position: relative; 
+    display: inline-block; /* задаю как строчно-блочный элемент, которому задаются параметры - ширина, высота, положение текста внутри. Не добавляет разрыв строки после элемента, поэтому этот элемент может располагаться рядом с другими элементами */ 
+    font-size: 1rem;
+}
 
+/* Задаю позиционирование для элементов submenu и subsubmenu */
+.submenu, /* 10 */
+.subsubmenu { /* 10 */
+    display: none;
+    /* position указывает, как элемент позиционируется в документе.
+    position: absolute; - "главный" элемент-предок, относительно которого располагаются элементы со значением position: relative; - элементы относительные.  */
+    position: absolute;
+    background: #009eef;
+}
 
-.menu__item:hover .submenu,
-.submenu__item:hover .subsubmenu {
-    display: block;
+/* Задаю "поведение" для .submenu и .subsubmenu - при наведении курсором на их родителей (элементов menu__item, и submenu__item) */
+.menu__item:hover .submenu, /* 30 */
+.submenu__item:hover .subsubmenu {  /* 30 */
+    display: block;  /* задаю как блочный элемент, т.к. Блочные элементы располагаются один над другим, вертикально */ 
     outline: 2px solid #0084ef;
 }
 

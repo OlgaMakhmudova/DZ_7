@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,56 +11,63 @@
 </head>
 
 <body>
-    <!-- .wrapper>ul.menu>li.-item*4>(a.-link{Menu$})|bem -->
+    <!-- Создаю меню по формуле:
+        .wrapper>ul.menu>li.-item*4>(a.-link{Menu$})|bem -->
     <div class="wrapper">
-        <ul class="menu">
-            <li class="menu__item">
-                <a href="#" class="menu__link">
-                    home
-                </a>
-            </li>
-            <li class="menu__item">
-                <a href="" class="menu__link">
-                    products
-                </a>
-                <!--ul.submenu>li.-item*2>a.-link{SubLink $}|bem-->
-                <ul class="submenu">
-                    <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                            product 1
-                        </a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                            product 2
-                        </a>
-                        <!--ul.subsubmenu>li.-item*2>a.-link{SubLink $}|bem-->
-                        <ul class="subsubmenu">
-                            <li class="subsubmenu__item">
-                                <a href="#" class="subsubmenu__link">
-                                    sub item
-                                </a>
-                            </li>
-                            <li class="subsubmenu__item">
-                                <a href="#" class="subsubmenu__link">
-                                    sub item
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu__item">
-                <a href="#" class="menu__link">
-                    about
-                </a>
-            </li>
-            <li class="menu__item">
-                <a href="#" class="menu__link">
-                    contact
-                </a>
-            </li>
-        </ul>
+        <div class="header"> <!-- Добавила класс .header -->
+            <ul class="menu">
+                <li class="menu__item">   <!-- Основной список меню -->
+                    <a href="#" class="menu__link">
+                        home
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">
+                        products
+                    </a>
+                    <!-- Добавляю подменю ul у второго элемента основного списка, внутри li этого второго элемента. 
+                        Т.е. submenu (подменю), по формуле:
+                        ul.submenu>li.-item*2>a.-link{SubLink $}|bem-->
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">
+                                product 1
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">
+                                product 2
+                            </a>
+                            <!--Добавляю подподменю ul у подменю второго элемента основного списка, внутри li этого подменю.
+                                Т.е. subsubmenu (подподменю), по формуле:
+                                ul.subsubmenu>li.-item*2>a.-link{SubLink $}|bem-->
+                            <ul class="subsubmenu">
+                                <li class="subsubmenu__item">
+                                    <a href="#" class="subsubmenu__link">
+                                        sub item
+                                    </a>
+                                </li>
+                                <li class="subsubmenu__item">
+                                    <a href="#" class="subsubmenu__link">
+                                        sub item
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        about
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 
