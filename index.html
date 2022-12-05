@@ -14,70 +14,79 @@
     <!-- Создаю меню по формуле:
         .wrapper>ul.menu>li.-item*4>(a.-link{Menu$})|bem -->
     <div class="wrapper">
-        <div class="header"> <!-- Добавила класс .header -->
-            
-            <ul class="menu">
+        <header class="header"> <!-- Добавила класс .header -->
+            <div class="logo">
+                <div class="logo__picture-wrap">
+                    <a href="#" class="logo__link">
+                        <img src="./imags/videocamera.png" alt="logo_picture" class="logo__picture">
+                    </a>
+                </div>
                 <h1 class="logo__title">
-                    <a class="logo___link" href="">
-                        <img class="logo__picture"
-                            src="./imags/videocamera.png" alt="videocamera">
+                    <a href="#" class="logo__link">
+                        Company
                     </a>
                 </h1>
-                <!--<li class="menu__item">   !-- Основной список меню --
-                    <img class="logo__picture"
-                        src="./imags/videocamera.png" alt="videocamera">
-                </li> -->
-                <li class="menu__item">   <!-- Основной список меню -->
-                    <a href="#" class="menu__link">
-                        home
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">
-                        products
-                    </a>
-                    <!-- Добавляю подменю ul у второго элемента основного списка, внутри li этого второго элемента. 
-                        Т.е. submenu (подменю), по формуле:
-                        ul.submenu>li.-item*2>a.-link{SubLink $}|bem-->
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">
-                                product 1
-                            </a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">
-                                product 2
-                            </a>
-                            <!--Добавляю подподменю ul у подменю второго элемента основного списка, внутри li этого подменю.
-                                Т.е. subsubmenu (подподменю), по формуле:
-                                ul.subsubmenu>li.-item*2>a.-link{SubLink $}|bem-->
-                            <ul class="subsubmenu">
-                                <li class="subsubmenu__item">
-                                    <a href="#" class="subsubmenu__link">
-                                        sub item
-                                    </a>
-                                </li>
-                                <li class="subsubmenu__item">
-                                    <a href="#" class="subsubmenu__link">
-                                        sub item
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        about
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        contact
-                    </a>
-                </li>
-            </ul>
+            </div> 
+            <div class="menu-wrap">
+                <ul class="menu">
+                    <!-- <li class="menu__item logo">   !-- Основной список меню --
+                        <a href="#" class="menu__link">
+                            <img class="logo__picture"
+                            src="./imags/videocamera.png" alt="videocamera">
+                        </a>
+                    </li> -->
+                    <li class="menu__item">   <!-- Основной список меню -->
+                        <a href="#" class="menu__link">
+                            home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            products
+                        </a>
+                        <!-- Добавляю подменю ul у второго элемента основного списка, внутри li этого второго элемента. 
+                            Т.е. submenu (подменю), по формуле:
+                            ul.submenu>li.-item*2>a.-link{SubLink $}|bem-->
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">
+                                    product 1
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">
+                                    product 2
+                                </a>
+                                <!--Добавляю подподменю ul у подменю второго элемента основного списка, внутри li этого подменю.
+                                    Т.е. subsubmenu (подподменю), по формуле:
+                                    ul.subsubmenu>li.-item*2>a.-link{SubLink $}|bem-->
+                                <ul class="subsubmenu">
+                                    <li class="subsubmenu__item">
+                                        <a href="#" class="subsubmenu__link">
+                                            sub item
+                                        </a>
+                                    </li>
+                                    <li class="subsubmenu__item">
+                                        <a href="#" class="subsubmenu__link">
+                                            sub item
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            about
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="main">
@@ -103,7 +112,9 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque esse vitae modi officiis possimus quae! Laudantium nesciunt ipsa, dolore natus ullam earum mollitia laboriosam sed delectus culpa sunt aspernatur quibusdam exercitationem minus obcaecati porro, quae ex ratione doloremque sapiente vel quod iusto. Tempora similique modi beatae quos quia, dolorem deleniti! Nam veniam animi molestiae magni consectetur. Temporibus deserunt suscipit architecto laborum at voluptatem, molestias laudantium, vero quibusdam nam repellat! Dolor consequuntur possimus voluptatem? Excepturi deleniti facere eius laudantium velit saepe vel ut ducimus repellat fuga reprehenderit nam, voluptatum, fugit explicabo exercitationem aspernatur, dignissimos aperiam. Blanditiis error consequatur explicabo libero ducimus.             
             </p>
         </div>
+        <section class=""></section>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

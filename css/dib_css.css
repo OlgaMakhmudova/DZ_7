@@ -7,29 +7,39 @@ wrapper>menu>menu__item>menu__link
 * {  /* Задаю общие параметры для всех элементов */
     text-decoration: none;
     color: #cbcbcb; 
-    text-transform: uppercase;
 }
 .wrapper {
     display: inline-block;
 }
-/* logo *
-.logo { /* Параметры блока logo *
-    width: 40%;
-}
-/* 10 *
-.logo__title {
-    width: 30%;
-}
-/* 10 *
-.logo__link {
-    justify-content: start;
+
+.header, 
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
-.logo__picture {
+.logo {
     width: 20%;
+    padding-left: 100px;
+}
+a {
+    text-decoration: none;
+}
+.logo__picture-wrap {
+    width: 50%;
+}
+.logo__picture {
+    min-width: 60%;
+    max-width: 90%;
+}
+/* 10 *
+.menu-wrap {  /* Задаю общие параметры для menu *
+    width: 100%;
 }
 /* 10 */
-.menu {  /* Задаю общие параметры для menu */
+.menu-wrap {  /* Задаю общие параметры для menu */
+    width: 100%;
     margin: 0;
     padding: 0;
     font-size: 0;
@@ -38,13 +48,20 @@ wrapper>menu>menu__item>menu__link
 /* 10 */
 .menu__item {  /* Задаю параметры для элементов menu */
     background-color: #333333;
+    display: block;
+    /*padding: 40px;*/
+    text-transform: uppercase;
 }
 
 li a {
     display: block; /* Ссылка как блочный элемент */
     padding: 40px;
 }
-
+/*
+.menu__item.logo.li a {
+    display: block; /* Ссылка как блочный элемент *
+    padding: 0;
+}
 /* 20 */
 .menu__item:hover,
 .submenu__item:hover,
@@ -52,6 +69,7 @@ li a {
     background-color: #009eef;
     outline: 2px solid #0084ef;
     color: white;
+    text-decoration: underline;
 }
 /* 10 */
 .submenu {  /* Задаю положение для submenu */
@@ -61,7 +79,7 @@ li a {
 /* 10 */
 .submenu__item {  /* Задаю положение для элементов submenu */
     display: block;
-    /*padding: 40px;*/
+    /* padding: 40px;*/
     width: 200px;
     text-align: left;
     background-color: #333333;
@@ -72,8 +90,8 @@ li a {
     left: 100%;
 }
 /* 10 */
-.subsubmenu__item {  /* Задаю положение и параметры  для элементов subsubmenu *
-    padding: 40px;*/
+.subsubmenu__item {  /* Задаю положение и параметры  для элементов subsubmenu */
+    /*padding: 40px;*/
     width: 400px;
     text-align: left;
     display: inline-block;
