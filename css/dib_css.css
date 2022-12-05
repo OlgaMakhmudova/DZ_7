@@ -16,12 +16,16 @@ wrapper>menu>menu__item>menu__link
 .logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+.header {
+    justify-content: space-between;
 }
 .logo {
     width: 20%;
     padding-left: 100px;
+    justify-content: right;
 }
 a {
     text-decoration: none;
@@ -69,7 +73,6 @@ li a {
     background-color: #009eef;
     outline: 2px solid #0084ef;
     color: white;
-    text-decoration: underline;
 }
 /* 10 */
 .submenu {  /* Задаю положение для submenu */
@@ -130,5 +133,14 @@ li a {
     color: #000000;
 }
 
+p {
+    padding-top: 20px;
+}
+
+h2 {
+    padding-top: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
 
 
