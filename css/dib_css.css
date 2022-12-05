@@ -3,44 +3,51 @@ wrapper>menu>menu__item>menu__link
                     submenu>submenu__item>submenu__link>
                                 subsubmenu>subsubmenu__item>subsubmenu__link> */
                                 
+/* ALL  */
 /* 01 */
 * {  /* Задаю общие параметры для всех элементов */
     text-decoration: none;
     color: #cbcbcb; 
 }
-.wrapper {
+/* 01 */
+a {
+    text-decoration: none;
+}
+/* 10 */
+.wrapper { /* Задаю тип элементов */
     display: inline-block;
 }
 
-.header, 
-.logo {
+/* HEADER */
+.header, /* 10 */
+.logo { /* 10 */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+/* 10 */
 .header {
     justify-content: space-between;
 }
+/* LOGO */
+/* 10 */
 .logo {
-    width: 20%;
-    padding-left: 100px;
     justify-content: right;
+    padding-left: 100px;
+    width: 20%;
 }
-a {
-    text-decoration: none;
-}
+/* 10 */
 .logo__picture-wrap {
     width: 50%;
 }
+/* 10 */
 .logo__picture {
     min-width: 60%;
     max-width: 90%;
 }
-/* 10 *
-.menu-wrap {  /* Задаю общие параметры для menu *
-    width: 100%;
-}
+
+/* MENU */
 /* 10 */
 .menu-wrap {  /* Задаю общие параметры для menu */
     width: 100%;
@@ -51,20 +58,15 @@ a {
 }
 /* 10 */
 .menu__item {  /* Задаю параметры для элементов menu */
-    background-color: #333333;
     display: block;
     /*padding: 40px;*/
     text-transform: uppercase;
+    background-color: #333333;
 }
-
+/* 01 */
 li a {
     display: block; /* Ссылка как блочный элемент */
     padding: 40px;
-}
-/*
-.menu__item.logo.li a {
-    display: block; /* Ссылка как блочный элемент *
-    padding: 0;
 }
 /* 20 */
 .menu__item:hover,
@@ -82,9 +84,9 @@ li a {
 /* 10 */
 .submenu__item {  /* Задаю положение для элементов submenu */
     display: block;
-    /* padding: 40px;*/
-    width: 200px;
     text-align: left;
+    width: 200px;
+    /* padding: 40px;*/
     background-color: #333333;
 }
 /* 10 */
@@ -95,9 +97,9 @@ li a {
 /* 10 */
 .subsubmenu__item {  /* Задаю положение и параметры  для элементов subsubmenu */
     /*padding: 40px;*/
-    width: 400px;
-    text-align: left;
     display: inline-block;
+    text-align: left;
+    width: 400px;
     background-color: #333333;
 }
    
@@ -115,10 +117,10 @@ li a {
 /* Задаю позиционирование для элементов submenu и subsubmenu */
 .submenu, /* 10 */
 .subsubmenu { /* 10 */
-    display: none;
     /* position указывает, как элемент позиционируется в документе.
     position: absolute; - "главный" элемент-предок, относительно которого располагаются элементы со значением position: relative; - элементы относительные.  */
     position: absolute;
+    display: none;
     background: #009eef;
 }
 
@@ -128,19 +130,26 @@ li a {
     display: block;  /* задаю как блочный элемент, т.к. Блочные элементы располагаются один над другим, вертикально */ 
     outline: 2px solid #0084ef;
 }
+
+/* MAIN */
+/* 10 */
 .main__title,
 .main__item {
     color: #000000;
 }
-
-p {
-    padding-top: 20px;
-}
-
+/* 01 */
 h2 {
     padding-top: 30px;
     font-size: 2rem;
     text-align: center;
 }
+/* 01 */
+p {
+    padding-top: 20px;
+}
 
-
+/* FOOTER */
+.footer__item {
+    text-align: center;
+    color: #000000;
+}
