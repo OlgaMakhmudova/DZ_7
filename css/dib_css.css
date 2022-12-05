@@ -9,6 +9,25 @@ wrapper>menu>menu__item>menu__link
     color: #cbcbcb; 
     text-transform: uppercase;
 }
+.wrapper {
+    display: inline-block;
+}
+/* logo *
+.logo { /* Параметры блока logo *
+    width: 40%;
+}
+/* 10 *
+.logo__title {
+    width: 30%;
+}
+/* 10 *
+.logo__link {
+    justify-content: start;
+    align-items: center;
+}
+.logo__picture {
+    width: 20%;
+}
 /* 10 */
 .menu {  /* Задаю общие параметры для menu */
     margin: 0;
@@ -19,11 +38,17 @@ wrapper>menu>menu__item>menu__link
 /* 10 */
 .menu__item {  /* Задаю параметры для элементов menu */
     background-color: #333333;
-    padding: 40px;
-    
 }
+
+li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 40px;
+}
+
 /* 20 */
-.menu__item:hover {  /* Задаю параметры для элементов menu, при наведении на них */
+.menu__item:hover,
+.submenu__item:hover,
+.subsubmenu__item:hover {  /* Задаю параметры для элементов menu, при наведении на них */
     background-color: #009eef;
     outline: 2px solid #0084ef;
     color: white;
@@ -35,9 +60,11 @@ wrapper>menu>menu__item>menu__link
 }
 /* 10 */
 .submenu__item {  /* Задаю положение для элементов submenu */
-    padding: 40px;
+    display: block;
+    /*padding: 40px;*/
     width: 200px;
     text-align: left;
+    background-color: #333333;
 }
 /* 10 */
 .subsubmenu {  /* Задаю положение для subsubmenu */
@@ -45,12 +72,12 @@ wrapper>menu>menu__item>menu__link
     left: 100%;
 }
 /* 10 */
-.subsubmenu__item {  /* Задаю положение и параметры  для элементов subsubmenu */
-    padding: 40px;
+.subsubmenu__item {  /* Задаю положение и параметры  для элементов subsubmenu *
+    padding: 40px;*/
     width: 400px;
     text-align: left;
     display: inline-block;
-    background: #009eef;
+    background-color: #333333;
 }
    
 /* Задаю позиционирование для элементов menu__item и subsubmenu__item */
@@ -79,6 +106,10 @@ wrapper>menu>menu__item>menu__link
 .submenu__item:hover .subsubmenu {  /* 30 */
     display: block;  /* задаю как блочный элемент, т.к. Блочные элементы располагаются один над другим, вертикально */ 
     outline: 2px solid #0084ef;
+}
+.main__title,
+.main__item {
+    color: #000000;
 }
 
 
